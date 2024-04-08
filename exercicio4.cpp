@@ -13,9 +13,11 @@ int main(){
     if( num1  == num2 && num2 == num3 && num1 == num3){
         printf("Equilátero \n");
     }
-    else if (((num1)))  {
-        printf(" Isósceles \n");
+    
+    else if (((num1 == num2)&& (num1 == num2) != num3) || ((num1 == num3)&& (num1 == num3)!= num2) || ((num2 && num3)&& (num2 && num3) != num1)){
+        printf("o triangulo é isósceles.\n");
     }
+    
     else if(num1 != num2 && num2 != num3 && num1 != num3){
         printf("Escaleno \n");
     }
