@@ -1,4 +1,4 @@
-# include <iostream>
+#include <iostream>
 
 int main(){
 
@@ -12,14 +12,14 @@ int main(){
     printf("Escolha a conversão em Celsius ou Fahrenheit ( F = Fahrenheit, C = Celsius): ");
     scanf("%s", &escolhaTemp);
 
-    int celsius = (temp - 32 )/ 1.8;
-    int fahren = (temp * 18) + 32 ;
+    float celsius = ((temp - 32 )/ 1.8);
+    float fahren = (temp * 1.8) + 32 ;
 
-    if(escolhaTemp == 'C'|| 'c'){
-        printf(" A conversão de Celsius para Fahrenheit deu %d °c \n", celsius);  
+    if(escolhaTemp == 'C'|| escolhaTemp == 'c'){
+        printf(" A conversão de Celsius para Fahrenheit deu %.2f °c \n", celsius);  
     }
-    else if(escolhaTemp == 'F' || 'f'){
-        printf(" A conversão de Fahrenheit para Celsiu deu %d f \n", fahren);
+    else if(escolhaTemp == 'F' || escolhaTemp == 'f'){
+        printf(" A conversão de Fahrenheit para Celsiu deu %.2f f \n", fahren);
     }
 
     return 0;
