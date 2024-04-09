@@ -12,7 +12,7 @@ int main(){
     char ope;
 
     printf(" Escolha a operaçao: \n + \n - \n * \n / ");
-    scanf("%c", &ope);
+    scanf("%s", &ope);
 
     float sub = n1 - n2 ;
     float ad = n1 + n2 ;
